@@ -55,51 +55,51 @@ Goku was inspired by Wukong but Goku is born on Plant Vegita<br>
   Goku eat at least a weeks worth of food in a single sitting but this is because going Super Saiyan comsumes a lot of energy<br>
 <h4>Use the button to see Goku</h4>  
 
-  .btn {
-  width: 140px;
-  height: 50px;
-  background: linear-gradient(to top, #00154c, #12376e, #23487f);
-  color: #fff;
-  border-radius: 50px;
-  border: none;
-  outline: none;
+<a href="/buttons/42" class="btn41-43 btn-42">
+  Goku
+</a>
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
   cursor: pointer;
+  transition: all 0.3s ease;
   position: relative;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  display: inline-block;
 }
 
-.btn span {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: top 0.5s;
+.btn-42 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: white;
 }
 
-.btn-text-one {
+.btn-42:after {
   position: absolute;
+  content: "";
   width: 100%;
-  top: 50%;
+  height: 0;
+  bottom: 0;
   left: 0;
-  transform: translateY(-50%);
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
 }
 
-.btn-text-two {
-  position: absolute;
-  width: 100%;
-  top: 150%;
-  left: 0;
-  transform: translateY(-50%);
+.btn-42:hover {
+  color: rgb(0, 0, 0);
 }
 
-.btn:Goku .btn-text-one {
-  top: -100%;
+.btn-42:hover:after {
+  top: 0;
+  height: 100%;
 }
 
-.btn:Goku .btn-text-two {
-  top: 50%;
+.btn-42:active {
+  top: 2px;
 }
-
 
   <h3>All about Wukong</h3>
   
