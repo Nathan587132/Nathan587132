@@ -1,108 +1,140 @@
-<html>
+
+<html lang="en">
 <head>
-  <style>.bn31 {
-  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
-  border-radius: 40px;
-  box-sizing: border-box;
-  color: #00a84f;
-  display: block;
-  height: 50px;
-  font-size: 1.4em;
-  padding: 4px;
-  position: relative;
-  text-decoration: none;
-  width: 7em;
-  z-index: 2;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goku and Wukong</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: linear-gradient(135deg, rgb(13, 175, 177), rgb(181, 66, 66));
+      min-height: 100vh;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
 
-.bn31:hover {
-  color: #fff;
-}
+    h1, h3, h4 {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 1em 0;
+      font-size: 2em;
+    }
 
-.bn31 .bn31span {
-  align-items: center;
-  background: #0e0e10;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  transition: background 0.5s ease;
-  width: 100%;
-}
+    h1 {
+      font-size: 3em;
+      color: #ffdd00;
+    }
 
-.bn31:hover .bn31span {
-  background: transparent;
-}
-     body{
-         text-align: center;
-         background-image: linear-gradient(rgb(13, 175, 177), rgb(181, 66, 66 ));
-         min-width: 100%;
-         min-height: 100%;
+    /* Main content container */
+    .content {
+      max-width: 1000px;
+      width: 90%;
+      padding: 2em;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      margin-top: 2em;
+    }
+
+    .section {
+      margin-bottom: 2em;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    /* Button Styling */
+    .bn31 {
+      background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+      border-radius: 40px;
+      box-sizing: border-box;
+      color: #00a84f;
+      display: inline-block;
+      height: 50px;
+      font-size: 1.4em;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .bn31:hover {
+      color: #fff;
+      background-image: linear-gradient(to right, #00a950 0%, #006175 100%);
+    }
+
+    /* Button text container */
+    .bn31 .bn31span {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .bn31:hover .bn31span {
+      background: transparent;
+    }
+    
+    /* Small screen adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5em;
       }
+      iframe {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 
 <body>
-<h1>Wukong and Goku </h1>
 
-  Goku and Wukong are similar yet different.<br>
+  <h1>Goku and Wukong</h1>
+  <div class="content">
+    <div class="section">
+      <h3>All about Goku</h3>
+      <p>Goku, inspired by Sun Wukong, was born on Planet Vegeta. He is a Saiyan, an alien species resembling humans but with a monkey-like tail. This tail allows them to transform into a Great Ape during a full moon.</p>
+      <p>Throughout his life, Goku has lost his tail three times, but when he transforms into Super Saiyan 4, he resembles a monkey once again.</p>
+      <p>Goku is known for his enormous appetite, eating an entire week's worth of food in a single sitting, especially when powering up into forms like Super Saiyan, which requires vast amounts of energy.</p>
+      <h4>Watch the Evolution of Goku:</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WtM2hR4vDuo" title="Evolution of Goku. (animation)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
-  <h3>All about Goku</h3>
-Goku was inspired by Wukong but Goku is born on Plant Vegita<br>
-  Goku is a Saiyan which is an alien that is similar to a human<br>
-  but they have a monkey like tail that transform them to a great ape during a full moon<br>
-  Goku lost his tail three times but when Goku is Super Saiyan 4 he look a bit like a monkey<br>
-  Goku eat at least a weeks worth of food in a single sitting but this is because going Super Saiyan comsumes a lot of energy<br>
-<h4>Use the video to see the evolution of Goku</h4>  
+    <div class="section">
+      <h3>All about Wukong</h3>
+      <p>Sun Wukong, also known as the Monkey King, was born in the Mountain of Flowers and Fruit. He is a legendary character from the 16th-century Chinese novel "Journey to the West." Wukong is a monkey endowed with human-like attributes, such as intelligence, strength, and agility.</p>
+      <p>His golden eyes have the ability to penetrate illusions and see malevolent beings, while his body is diamond-hard and impervious to most conventional weapons.</p>
+      <p>Wukong is also known for his ability to create clones of himself from his hair and possesses magical powers that make him nearly invincible.</p>
+      <p>The Buddha arranged for Wukong to be fed iron pellets when he was hungry and molten copper when he was thirsty, as part of his divine trials.</p>
+      <h4>Watch Wukong in Action:</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/u83VdXAVq08?si=XO_M2eGQogyp1iA4" title="Wukong Game and Powers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
-
-     <iframe width="484" height="860" src="https://www.youtube.com/embed/WtM2hR4vDuo" title="Evolution of Goku. (animation)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-  
-    <h3>All about Wukong</h3>
-
-  Wukong is different to Goku since he was born in the Mountain of flowers and fruit.<br>
-  Sun Wukong is commonly portrayed as a monkey endowed with human attributes,<br>
-  renowned for his extraordinary strength and agility.<br>
-  His golden eyes possess the ability to penetrate illusions and discern malevolence,<br>
-  while his diamond-hard body renders him impervious to conventional weaponry.<br>
-  The monkey king can create clones with his hair<br>
-Sun Wukong (Chinese: 孫悟空, Mandarin pronunciation: [swə́n ûkʰʊ́ŋ]),<br>
-  also known as the Monkey King,<br>
-  is a literary and religious figure best known as one of the main characters in the 16th-century Chinese novel Journey to the West.<br>
-The <strong>Buddha</strong> arranges two earth spirits to feed the Monkey King iron pellets when he is hungry, and molten copper when he is thirsty.<br>
-  <h1>Use the video to see Wukong and the game he is in</h1>
-  
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/u83VdXAVq08?si=XO_M2eGQogyp1iA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <script>
-
-   
-
-<h3> How is stronger <h3>
-
-
-  Wukong is a vastayan trickster who uses his strength, agility,<br>
-  and intelligence to confuse his opponents and gain the upper hand.<br>
-  After finding a lifelong friend in the warrior known as Master Yi this gives Wukong the upper hand<br>
-  but Goku has Superhuman Strength, Superhuman Speed, Superhuman Durability, Superhuman Senses, Superhuman Endurance,<br>
-  Powerful Lungs and Heat Resistance this makes him a God since he also can go Ultra Instinct making him see through attacks before they happen<br>
-   
-  
-
-
-
-
-    
-</script>
-</html>
-
-
-</style>
-</head>
-
-<script>
-
+    <div class="section">
+      <h3>Who is Stronger?</h3>
+      <p>Wukong, as a Vastayan trickster, uses his incredible strength, agility, and intelligence to confuse his opponents and outmaneuver them in battle. His cunning is enhanced by his magical abilities, such as shape-shifting and creating clones.</p>
+      <p>On the other hand, Goku possesses Superhuman Strength, Speed, Durability, and Endurance. Additionally, Goku has developed Ultra Instinct, a divine ability that allows him to perceive and react to attacks before they happen, making him one of the most powerful beings in the Dragon Ball universe.</p>
+      <a href="#" class="bn31">
+        <span class="bn31span">Who Would Win?</span>
+      </a>
+    </div>
+  </div>
 
 </body>
 </html>
-
