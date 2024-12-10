@@ -1,22 +1,23 @@
 
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goku and Wukong</title>
   <style>
-    /* Global Styles */
+
     body {
       font-family: 'Arial', sans-serif;
       background-image: linear-gradient(135deg, rgb(13, 175, 177), rgb(181, 66, 66));
       min-height: 100vh;
-      color: #fff;
       margin: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
+      color: #fff;
     }
 
     h1, h3, h4 {
@@ -31,7 +32,11 @@
       color: #ffdd00;
     }
 
-    /* Main content container */
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
     .content {
       max-width: 1000px;
       width: 90%;
@@ -50,14 +55,16 @@
       line-height: 1.6;
     }
 
+  
     iframe {
       width: 100%;
       max-width: 560px;
       margin-top: 20px;
       border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
-    /* Button Styling */
+   
     .bn31 {
       background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
       border-radius: 40px;
@@ -70,28 +77,26 @@
       text-align: center;
       text-decoration: none;
       margin-top: 20px;
-      transition: 0.3s;
+      transition: all 0.3s ease;
+      cursor: pointer;
     }
 
     .bn31:hover {
       color: #fff;
       background-image: linear-gradient(to right, #00a950 0%, #006175 100%);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     }
 
     /* Button text container */
     .bn31 .bn31span {
-      align-items: center;
       display: flex;
       justify-content: center;
+      align-items: center;
       height: 100%;
       width: 100%;
     }
 
-    .bn31:hover .bn31span {
-      background: transparent;
-    }
-    
-    /* Small screen adjustments */
+   
     @media (max-width: 768px) {
       h1 {
         font-size: 2.5em;
@@ -99,13 +104,30 @@
       iframe {
         max-width: 100%;
       }
+      .content {
+        padding: 1.5em;
+      }
+      h3, h4 {
+        font-size: 1.5em;
+      }
+    }
+
+    
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+      .bn31 {
+        font-size: 1.2em;
+        padding: 10px 18px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Goku and Wukong</h1>
+  <h1 id="top">Goku and Wukong</h1>
   <div class="content">
     <div class="section">
       <h3>All about Goku</h3>
@@ -130,26 +152,20 @@
       <h3>Who is Stronger?</h3>
       <p>Wukong, as a Vastayan trickster, uses his incredible strength, agility, and intelligence to confuse his opponents and outmaneuver them in battle. His cunning is enhanced by his magical abilities, such as shape-shifting and creating clones.</p>
       <p>On the other hand, Goku possesses Superhuman Strength, Speed, Durability, and Endurance. Additionally, Goku has developed Ultra Instinct, a divine ability that allows him to perceive and react to attacks before they happen, making him one of the most powerful beings in the Dragon Ball universe.</p>
-
-  
-      
-      <iframe width="484" height="860" src="https://www.youtube.com/embed/Lpyx1Ubmv5s" title="Son Wukong vs Son Goku #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      
-      
-      <h3>What about....</h3>
-
-      Is Wukong able to defeat Beerus<br>
-      Beerus is the God of Destruction and the mosted fear among the Gods and had many battles with Goku and won all of them so who would win the fight
-    <h3>Watch the video to find out </h3>
-
-      <iframe width="484" height="860" src="https://www.youtube.com/embed/8wKfx22oKyQ" title="Sun Wukong VS Beerus/#shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      
-    
-      
-      <a href="#" class="bn31">
-        <span class="bn31span">Back to the top </span>
-      </a>
+      <h4>Watch the battle:</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Lpyx1Ubmv5s" title="Son Wukong vs Son Goku #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+
+    <div class="section">
+      <h3>What about....</h3>
+      <p>Is Wukong able to defeat Beerus? Beerus is the God of Destruction and the most feared among the Gods. He has had many battles with Goku and won all of them. Who would win the fight?</p>
+      <h4>Watch the video to find out:</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8wKfx22oKyQ" title="Sun Wukong VS Beerus/#shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <a href="#top" class="bn31">
+      <span class="bn31span">Back to the top</span>
+    </a>
   </div>
 
 </body>
